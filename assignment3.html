@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+<body>
+<ul>
+<li>HTML Tutorial</li>
+<li>MongoDB Tutorial</li>
+<li>Python Tutorial</li>
+<ul>
+<script>
+	$(document).ready(function(){
+
+		$("li").prepend(function(i){
+			return "<b>" + i + ": </b>";
+
+		});
+	});
+	
+</script>
+</body>
+</html>
